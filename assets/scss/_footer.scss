@@ -1,0 +1,67 @@
+.page-footer {
+    background: $color-dark;
+    color: $color-light;
+    margin-top: 20px;
+
+    &-item {
+        padding-top: 25px;
+
+        a {
+            color: #777;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $color-light;
+            }
+        }
+
+    }
+
+    .footer-copyright {
+        padding: 25px 0 25px 0;
+        color: $color-light;
+
+        &-link {
+            color: #777;
+            transition: color 0.3s;
+            position: relative;
+
+              &::after {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: 70px;
+                    width: 0;
+                    content: "";
+                    transition: left 0.5s, width 0.5s;
+                    border-bottom: 2px solid red;
+                }
+              &::before {
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    margin-right: 70px;
+                    width: 0;
+                    content: "";
+                    transition: left 0.5s, width 0.5s;
+                    border-bottom: 2px solid red;
+                }
+           &:hover {
+                color: $color-light;
+                &::after {
+                        left: 50%;
+                        width: 50%;
+                }
+               &::before {
+                        right: 50%;
+                        width: 50%;
+                }
+              
+            }
+
+        }
+    }
+
+
+}
+

@@ -1,0 +1,124 @@
+        .left-sidbar {
+            margin-bottom: $gap * 4;
+        }
+
+        .vertical-slider {
+            border-radius: 4px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .top-films {
+
+            .panel-body {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .list-group {
+                margin-bottom: 0;
+            }
+
+            .badge {
+                margin-top: 2px;
+            }
+
+            &-item {
+                padding: 0;
+                border-top: 1px solid $color-gray;
+                border-left: none;
+                border-right: none;
+                background-color: transparent;
+                transition: background-color 0.1s, color 0.1s;
+
+                &:first-child {
+                    border-top: none;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a {
+                    display: block;
+                    padding: 10px 15px 10px 25px;
+
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $color-accent;
+                    border-radius: 0;
+
+                    .badge {
+                        background-color: $color-dark;
+                    }
+
+                    a {
+                        color: $color-light;
+                    }
+                }
+            }
+        }
+
+        .site-news-item {
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            transition: background-color 0.3s;
+
+            &:not(:last-child)::after {
+                position: absolute;
+                left: 85px;
+                bottom: 7px;
+                width: calc(100% - 85px);
+                height: 2px;
+                content: "";
+                background-color: $color-gray;
+            }
+
+            &:hover {
+                .thumbnail {
+                    background-color: $color-accent;
+                }
+
+                &:not(:last-child)::after {
+                    background-color: rgba($color-accent, 0.54);
+                }
+
+                a {
+                    color: $color-accent;
+
+                }
+            }
+
+            &__image {
+                min-width: 75px;
+                transition: background-color 0.3s;
+                margin-right: 10px;
+                height: 75px;
+            }
+
+            &__title {
+                width: 100%;
+
+                a {
+                    display: block;
+                    height: 45px;
+                    margin-bottom: 15px;
+                    transition: color 0.3s;
+                    overflow: hidden;
+                }
+
+            }
+
+            &__date {
+
+                font-size: 0.8rem;
+                color: darken(#ffffff, 33.5%);
+            }
+
+        }

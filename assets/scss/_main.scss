@@ -1,0 +1,35 @@
+.new-film, .top-film{
+   
+    
+    .thumbnail:hover{
+       background-color: $color-accent;
+
+        strong{
+            color: $color-light;
+        }
+    }
+
+    
+    &-item{
+        
+        &__images {
+         transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+          
+            strong{
+                text-align: center;
+                display: block;
+                margin: 9px 0 9px 0;
+            }
+         
+        }
+    }
+}
+
+
+.kino-news-item{
+    padding-bottom: 30px;
+}
+
+
+
+        
