@@ -291,9 +291,21 @@ h2::after {
   border-bottom-right-radius: 4px;
 }
 
+@media (max-width: 575px) {
+  .video-wrap-info {
+    padding: 10px;
+  }
+}
+
 .video-wrap-info__title {
   text-align: center;
   font-size: 1.28rem;
+}
+
+@media (max-width: 575px) {
+  .video-wrap-info__title {
+    font-size: 1.08rem;
+  }
 }
 
 .video-wrap-info__title span {
@@ -301,12 +313,27 @@ h2::after {
   margin-right: 20px;
 }
 
+@media (max-width: 767px) {
+  .video-wrap-info__title span {
+    font-size: 0.77rem;
+    margin-right: 10px;
+  }
+}
+
 .page-description p {
   padding: 20px;
 }
 
-form {
-  margin-bottom: 35px;
+@media (min-width: 1200px) {
+  form {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  form {
+    padding-bottom: 60px;
+  }
 }
 
 form .form-item {

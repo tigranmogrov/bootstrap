@@ -15,26 +15,41 @@
     border:1px solid  $color-gray;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    @include xs{
+        padding: 10px;
+    }
 
     &__title {
         text-align: center;
-        
         font-size: 1.28rem;
+        @include xs{
+            font-size: 1.08rem;
+        }
         span {
         font-size: 0.97rem;    
             margin-right: 20px;
+            @include sm{
+                font-size: 0.77rem;
+                margin-right: 10px;
+            }
         }
     }
 }
 .page-description{
     
     p{
-      
         padding: 20px;
     }
 }
 form{
-    margin-bottom: 35px;
+    @include lg-min{
+        padding-bottom: 30px;
+    }
+   
+    @include md{
+        padding-bottom: 60px;
+    }
+ 
 
     .form-item{
         margin-bottom: 15px;
