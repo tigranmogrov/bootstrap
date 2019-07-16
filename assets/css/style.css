@@ -305,6 +305,14 @@ h2::after {
   padding: 20px;
 }
 
+form {
+  margin-bottom: 35px;
+}
+
+form .form-item {
+  margin-bottom: 15px;
+}
+
 .left-sidbar {
   margin-bottom: 60px;
 }
@@ -480,7 +488,7 @@ h2::after {
   -webkit-transition: left 0.5s, width 0.5s;
   -o-transition: left 0.5s, width 0.5s;
   transition: left 0.5s, width 0.5s;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #df8a13;
 }
 
 .page-footer .footer-copyright-link::before {
@@ -493,7 +501,7 @@ h2::after {
   -webkit-transition: left 0.5s, width 0.5s;
   -o-transition: left 0.5s, width 0.5s;
   transition: left 0.5s, width 0.5s;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #df8a13;
 }
 
 .page-footer .footer-copyright-link:hover {

@@ -34,7 +34,7 @@
                     width: 0;
                     content: "";
                     transition: left 0.5s, width 0.5s;
-                    border-bottom: 2px solid red;
+                    border-bottom: 2px solid $color-accent;
                 }
               &::before {
                     position: absolute;
@@ -44,7 +44,7 @@
                     width: 0;
                     content: "";
                     transition: left 0.5s, width 0.5s;
-                    border-bottom: 2px solid red;
+                    border-bottom: 2px solid $color-accent;
                 }
            &:hover {
                 color: $color-light;
