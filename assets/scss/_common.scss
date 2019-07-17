@@ -20,9 +20,8 @@ a {
 h1 {
     position: relative;
     overflow: hidden;
-    margin: (-$gap / 2) 0 ($gap * 3);
+    margin: (-$gap / 2) 0 ($gap * 2.5);
     font-family: $font-header;
-
     @include xs-min {
         font-size: 3rem;
     }

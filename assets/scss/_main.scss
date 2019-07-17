@@ -1,6 +1,10 @@
+.main{
 .new-film, .top-film{
-   
-    
+    .row {
+        margin-right: -7.5px;
+        margin-bottom: -$gap;
+        margin-left: -7.5px;
+      } 
     .thumbnail:hover{
        background-color: $color-accent;
 
@@ -11,10 +15,11 @@
 
     
     &-item{
-        
+        padding-right: $gap / 2;
+        padding-left: $gap / 2;
         &__images {
          transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-          
+        
             strong{
                 text-align: center;
                 display: block;
@@ -29,7 +34,4 @@
 .kino-news-item{
     padding-bottom: 30px;
 }
-
-
-
-        
+}
