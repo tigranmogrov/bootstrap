@@ -98,7 +98,7 @@
 
 .input-lg,
 .input-group-lg > .form-control {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 html {
@@ -257,6 +257,7 @@ h2::after {
 
 .main .new-film .thumbnail:hover, .main .top-film .thumbnail:hover {
   background-color: #df8a13;
+  border: 1px solid #df8a13;
 }
 
 .main .new-film .thumbnail:hover strong, .main .top-film .thumbnail:hover strong {
@@ -272,6 +273,7 @@ h2::after {
   -webkit-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
   -o-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  margin-bottom: 15px;
 }
 
 .main .new-film-item__images strong, .main .top-film-item__images strong {
@@ -280,8 +282,12 @@ h2::after {
   margin: 9px 0 9px 0;
 }
 
-.main .kino-news-item {
+.main .kino-news {
   padding-bottom: 30px;
+}
+
+.main .kino-news-item:hover .thumbnail {
+  background-color: #df8a13;
 }
 
 .page-films iframe {

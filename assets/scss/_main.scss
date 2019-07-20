@@ -7,18 +7,20 @@
       } 
     .thumbnail:hover{
        background-color: $color-accent;
+       border:1px solid $color-accent;
 
         strong{
             color: $color-light;
         }
     }
 
-    
+ 
     &-item{
         padding-right: $gap / 2;
         padding-left: $gap / 2;
         &__images {
          transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+         margin-bottom: 15px;
         
             strong{
                 text-align: center;
@@ -31,7 +33,11 @@
 }
 
 
-.kino-news-item{
+.kino-news{
     padding-bottom: 30px;
-}
+&-item:hover{
+    .thumbnail{
+        background-color: $color-accent;
+     }
+}}
 }
