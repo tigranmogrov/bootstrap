@@ -5,24 +5,25 @@
         margin-bottom: -$gap;
         margin-left: -7.5px;
       } 
-    .thumbnail:hover{
-       background-color: $color-accent;
-       border:1px solid $color-accent;
-
-        strong{
-            color: $color-light;
-        }
-    }
-
- 
+   
     &-item{
         padding-right: $gap / 2;
         padding-left: $gap / 2;
+        &:hover{
+            .thumbnail{background-color: $color-accent;
+            border:1px solid $color-accent;
+     
+             strong{
+                 color: $color-light;
+             }
+            }
+         }
         &__images {
          transition: background-color 0.3s, border-color 0.3s, color 0.3s;
          margin-bottom: 15px;
         
             strong{
+                color:  $color-dark;
                 text-align: center;
                 display: block;
                 margin: 9px 0 9px 0;
@@ -35,9 +36,26 @@
 
 .kino-news{
     padding-bottom: 30px;
+  .col-sm-8{
+      margin-bottom: 30px;
+  }
+   a{
+    transition:color 0.3s; 
+  }
+.thumbnail{
+    transition: background-color 0.3s;
+}
+
 &-item:hover{
+   h3 > a{
+        color: $color-accent;
+    }
     .thumbnail{
         background-color: $color-accent;
      }
-}}
+     .btn-warning{
+         background-color:  $color-accent;
+     }
+}
+}
 }
